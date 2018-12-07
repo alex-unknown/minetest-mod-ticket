@@ -1,6 +1,6 @@
 --[[
-	dice Mod [dice3]
-	================
+	Ticket Mod [ticket]
+	===================
 	v0.1 by unknown
 	Copyright (C) 2017-2018 Alexander K.
 	idea: maxx :)
