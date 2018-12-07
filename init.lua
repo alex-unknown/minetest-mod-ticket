@@ -1,6 +1,6 @@
 --[[
-	Ticket Mod [ticket]
-	===================
+	dice Mod [dice3]
+	================
 	v0.1 by unknown
 	Copyright (C) 2017-2018 Alexander K.
 	idea: maxx :)
@@ -18,10 +18,10 @@ local function show_formspec(player)
                 "button_exit[1.25,2.5;2,1;exit;Save]")
 end
 
-minetest.register_craftitem("ticket:blanc_ticket", {
-	description = "blanc ticket",
+minetest.register_craftitem("ticket:unlabeled_ticket", {
+	description = "ticket (rightclick!)",
 	stack_max = 999,
-	inventory_image = "ticket_blanc_ticket.png",
+	inventory_image = "ticket_unlabeled_ticket.png",
 	groups = {},
 	on_place = function(_, placer)
 		show_formspec(placer)
@@ -58,7 +58,7 @@ minetest.register_on_player_receive_fields(function(player,formname, fields)
 end)
 
 minetest.register_craft({
-	output = "ticket:blanc_ticket 999",
+	output = "ticket:unlabeled_ticket 999",
 	recipe = {
 		{"default:paper", "default:paper", "default:paper"},
 		{"default:sign_wall_wood", "default:sign_wall_wood", "default:sign_wall_wood"},
